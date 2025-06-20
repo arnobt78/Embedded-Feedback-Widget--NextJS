@@ -10,6 +10,9 @@ export default defineConfig({
       entries: [{ find: "@", replacement: resolve(__dirname, "src") }],
     }),
   ],
+  define: {
+    "process.env.NODE_ENV": JSON.stringify("production"),
+  },
   build: {
     lib: {
       entry: resolve(__dirname, "src/web-component.jsx"),
