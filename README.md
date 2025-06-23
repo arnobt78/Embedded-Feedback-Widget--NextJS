@@ -1,6 +1,9 @@
 # Feedback Widget Next
 
-A modern, full-stack feedback widget built with Next.js, React, Tailwind CSS, and Prisma (MongoDB), that can be integrated into various projects. It allows users to submit feedback, including their name, email, message, and rating.
+<img width="659" alt="Screenshot 2025-06-24 at 00 39 22" src="https://github.com/user-attachments/assets/1739dbc0-80bf-4d96-b971-462b22994380" /> <img width="881" alt="Screenshot 2025-06-24 at 00 32 52" src="https://github.com/user-attachments/assets/c105e4f1-46a6-441b-8f8f-4a4c8f48c26f" /> <img width="775" alt="Screenshot 2025-06-24 at 00 39 05" src="https://github.com/user-attachments/assets/76a6a2ff-54d6-46a1-8955-c694cb16e8f9" />
+
+
+Feedback Widget Next is a reusable, embeddable feedback widget for modern web projects. Users can submit feedback (name, email, message, rating), which is stored in a MongoDB database via Prisma. The widget is designed for easy integration, customization, and educational purposes.
 
 ---
 
@@ -33,12 +36,6 @@ A modern, full-stack feedback widget built with Next.js, React, Tailwind CSS, an
 17. [Learn More](#learn-more)
 18. [About](#about)
 19. [Conclusion](#conclusion)
-
----
-
-## Project Summary
-
-Feedback Widget Next is a reusable, embeddable feedback widget for modern web projects. Users can submit feedback (name, email, message, rating), which is stored in a MongoDB database via Prisma. The widget is designed for easy integration, customization, and educational purposes.
 
 ---
 
