@@ -1,6 +1,6 @@
 # Feedback Widget Next
 
-> **A modern, full-stack feedback widget built with Next.js, React, Tailwind CSS, and Prisma (MongoDB).**
+A modern, full-stack feedback widget built with Next.js, React, Tailwind CSS, and Prisma (MongoDB), that can be integrated into various projects. It allows users to submit feedback, including their name, email, message, and rating.
 
 ---
 
