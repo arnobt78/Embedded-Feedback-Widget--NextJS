@@ -1,14 +1,10 @@
-# Feedback Widget Next
+# Feedback Widget NextJS
 
-> **A modern, full-stack feedback widget built with Next.js, React, Tailwind CSS, and Prisma (MongoDB).**
+![Screenshot 2025-06-24 at 00 39 22](https://github.com/user-attachments/assets/1739dbc0-80bf-4d96-b971-462b22994380)
+![Screenshot 2025-06-24 at 00 32 52](https://github.com/user-attachments/assets/c105e4f1-46a6-441b-8f8f-4a4c8f48c26f)
+![Screenshot 2025-06-24 at 00 39 05](https://github.com/user-attachments/assets/76a6a2ff-54d6-46a1-8955-c694cb16e8f9)
 
----
-
-## Live Demo & Integration
-
-- **Live Widget:** [https://widget-feedback-next.vercel.app/](https://widget-feedback-next.vercel.app/)
-- **Integrated Example:** [https://marketing-arnob.netlify.app/](https://marketing-arnob.netlify.app/)
-- **Integration Repo:** [Marketing--TailwindCSS-Fundamental-Project-2](https://github.com/arnobt78/Marketing--TailwindCSS-Fundamental-Project-2)
+A modern, full-stack feedback widget and API built with Next.js, React, Tailwind CSS, and Prisma.
 
 ---
 
@@ -16,29 +12,29 @@
 
 1. [Project Summary](#project-summary)
 2. [Features](#features)
-3. [Screenshots](#screenshots)
-4. [Live Demo & Integration](#live-demo--integration)
-5. [Project Structure](#project-structure)
-6. [Technology Stack](#technology-stack)
-7. [Prerequisites](#prerequisites)
-8. [Installation](#installation)
-9. [Environment Variables](#environment-variables)
-10. [Database Setup](#database-setup)
-11. [Usage Instructions](#usage-instructions)
-12. [Widget Integration](#widget-integration)
-13. [Development & Customization](#development--customization)
-14. [ESLint & Tailwind CSS Configuration](#eslint--tailwind-css-configuration)
-15. [React Testing](#react-testing)
-16. [Keywords & Topics](#keywords--topics)
-17. [Learn More](#learn-more)
-18. [About](#about)
-19. [Conclusion](#conclusion)
+3. [Technology Stack](#technology-stack)
+4. [Project Structure](#project-structure)
+5. [Getting Started](#getting-started)
+6. [Environment Variables](#environment-variables)
+7. [Database Setup](#database-setup)
+8. [Usage Instructions](#usage-instructions)
+9. [Widget Integration Guide](#widget-integration-guide)
+10. [Development & Customization](#development--customization)
+11. [ESLint & Tailwind CSS Configuration](#eslint--tailwind-css-configuration)
+12. [React Testing](#react-testing)
+13. [Keywords & Topics](#keywords--topics)
+14. [Learn More](#learn-more)
+15. [About](#about)
+16. [Conclusion](#conclusion)
 
 ---
 
 ## Project Summary
 
-Feedback Widget Next is a reusable, embeddable feedback widget for modern web projects. Users can submit feedback (name, email, message, rating), which is stored in a MongoDB database via Prisma. The widget is designed for easy integration, customization, and educational purposes.
+Feedback Widget Next is a reusable, embeddable feedback widget and API for modern web projects. Users can submit feedback (name, email, message, rating), which is stored in a database via Prisma. The widget is designed for easy integration, customization, and educational purposes. The API and widget are deployed on Vercel and can be embedded in any site.
+
+- **Live Demo**: [https://widget-feedback-next.vercel.app/](https://widget-feedback-next.vercel.app/)
+- **Example Integration**: [https://marketing-arnob.netlify.app/](https://marketing-arnob.netlify.app/)
 
 ---
 
@@ -46,19 +42,32 @@ Feedback Widget Next is a reusable, embeddable feedback widget for modern web pr
 
 - **Reusable Widget Component**: Easily add, customize, and extend widgets.
 - **API Route Example**: Feedback API route for backend integration.
-- **Prisma ORM (MongoDB)**: Type-safe database access and schema management.
+- **Prisma ORM**: Type-safe database access and schema management (MongoDB or PostgreSQL).
 - **Tailwind CSS**: Utility-first, responsive styling.
 - **UI Component Library**: Modular, reusable UI components (Button, Card, Input, etc.).
 - **TypeScript & JavaScript**: Mixed usage for flexibility and gradual migration.
 - **Ready for Testing**: Easily add React tests (see below for test instructions).
-- **Widget Embedding**: Can be built and embedded in other projects.
+- **Widget Embedding**: Can be built and embedded in other projects as a UMD bundle.
+- **Vercel Deployment**: Fast, global delivery with serverless functions.
+
+---
+
+## Technology Stack
+
+- **Next.js** (App Router)
+- **React** (Functional Components)
+- **Tailwind CSS** (Styling)
+- **Prisma** (ORM for MongoDB or PostgreSQL)
+- **TypeScript & JavaScript**
+- **PostCSS**
+- **ESLint**
 
 ---
 
 ## Project Structure
 
-```text
-/ (root)
+```bash
+feedback-widget-next/
 ├── components.json
 ├── eslint.config.mjs
 ├── next-env.d.ts
@@ -70,7 +79,7 @@ Feedback Widget Next is a reusable, embeddable feedback widget for modern web pr
 ├── prisma/
 │   └── schema.prisma
 ├── public/
-│   └── *.svg, screenshot1.png, ...
+│   └── *.svg, widget.umd.js, ...
 ├── src/
 │   ├── app/
 │   │   ├── favicon.ico
@@ -97,46 +106,26 @@ Feedback Widget Next is a reusable, embeddable feedback widget for modern web pr
 
 ---
 
-## Technology Stack
+## Getting Started
 
-- **Next.js** (App Router)
-- **React** (Functional Components)
-- **Tailwind CSS** (Styling)
-- **Prisma** (ORM for MongoDB)
-- **TypeScript & JavaScript**
-- **PostCSS**
-- **ESLint**
+### 1. Clone the repository
 
----
+```bash
+git clone <your-repo-url>
+cd feedback-widget-next
+```
 
-## Prerequisites
+### 2. Install dependencies
 
-- Node.js (v18+ recommended)
-- npm, yarn, pnpm, or bun
-- MongoDB database (local or cloud, e.g. MongoDB Atlas)
-
----
-
-## Installation
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone <your-repo-url>
-   cd feedback-widget-next
-   ```
-
-2. **Install dependencies:**
-
-   ```bash
-   npm install
-   # or
-   yarn install
-   # or
-   pnpm install
-   # or
-   bun install
-   ```
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
 
 ---
 
@@ -152,35 +141,12 @@ DATABASE_URL="mongodb+srv://USER:PASSWORD@CLUSTER.mongodb.net/DATABASE?retryWrit
 
 ## Database Setup
 
-1. **Your Prisma schema (`prisma/schema.prisma`) should look like:**
-
-```prisma
-// This is your Prisma schema file
-
-generator client {
-  provider = "prisma-client-js"
-}
-
-datasource db {
-  provider = "mongodb"
-  url      = env("DATABASE_URL")
-}
-
-model Feedback {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  name      String?
-  email     String?
-  message   String
-  rating    Int?
-  createdAt DateTime @default(now())
-}
-```
-
-1. **Push your schema to MongoDB:**
+1. **Edit your Prisma schema (`prisma/schema.prisma`) as needed.**
+2. **Push your schema to the database:**
 
 ```bash
-   npx prisma generate
-   npx prisma db push
+npx prisma generate
+npx prisma db push
 ```
 
 ---
@@ -201,38 +167,39 @@ bun dev
 
 Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Editing Pages & Widgets
+### Building the Widget UMD Bundle
 
-- Main page: `src/app/page.jsx`
-- Layout: `src/app/layout.tsx`
-- Global styles: `src/app/globals.css`
-- Widget logic: `src/components/Widget.jsx`
-- UI components: `src/components/ui/`
+```bash
+npm run build:widget
+```
 
-### API Routes
-
-- Example backend route: `src/app/api/feedback/route.js`
-  - Accepts: `{ name, email, message, rating }`
-  - Returns: Created feedback or error
+This will output `widget.umd.js` in the `public/` directory, ready for embedding.
 
 ---
 
-## Widget Integration
+## Widget Integration Guide
 
-You can build and embed this widget in other projects. Example (for a UMD build):
+You can embed the feedback widget into any HTML page (including other projects) with just a few lines:
 
 ```html
-<!-- In your host project's index.html -->
+<!-- Load React and ReactDOM UMD builds for the widget -->
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<!-- Include the widget script from your Vercel deployment -->
 <script src="https://widget-feedback-next.vercel.app/widget.umd.js"></script>
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    const widgetElement = document.createElement("my-widget");
-    document.body.appendChild(widgetElement);
-  });
-</script>
+<my-widget
+  api-base="https://widget-feedback-next.vercel.app/api/feedback"
+></my-widget>
 ```
 
-> **Note:** For Next.js, you may need to adapt the build process to output a UMD bundle for embedding. See [Next.js Custom Builds](https://nextjs.org/docs/advanced-features/custom-server) or consider using a tool like Vite for widget-only builds.
+- The `api-base` attribute should point to your deployed Next.js API endpoint.
+- The widget will automatically inject its styles and handle feedback submission.
+
+**To integrate into your own project:**
+
+1. Deploy this project to Vercel.
+2. Copy the script and `<my-widget>` tag above into your HTML.
+3. Optionally, style or position the widget as needed.
 
 ---
 
@@ -295,16 +262,20 @@ module.exports = {
 This project is ready for adding React tests. To add tests:
 
 1. Install a test runner (e.g., Jest, React Testing Library):
+
    ```bash
    npm install --save-dev jest @testing-library/react @testing-library/jest-dom
    ```
+
 2. Add test files alongside your components, e.g., `Widget.test.jsx`.
 3. Run tests with:
+
    ```bash
    npm test
    # or
    yarn test
    ```
+
 4. For more, see [React Testing Library Docs](https://testing-library.com/docs/react-testing-library/intro/).
 
 ---
@@ -328,10 +299,14 @@ widget, reactjs, feedback, mongodb, feedback-form, widget-manager, tailwindcss, 
 
 ## About
 
-This is a feedback widget that can be integrated into various projects. It allows users to submit feedback, including their name, email, message, and rating. The feedback is stored in a MongoDB database via Prisma. Designed for easy integration, customization, and educational use.
+This project is designed as a teaching and demonstration tool for modern React, Next.js, and TailwindCSS workflows, with a focus on real-world integration patterns and best practices. It is ideal for learning, rapid prototyping, and production use.
 
 ---
 
 ## Conclusion
 
-Feedback Widget Next is a robust starting point for building modern, full-stack widget applications. It is designed for easy learning, rapid prototyping, and production use. Feel free to extend, customize, and use it as a teaching or learning resource.
+Feedback Widget Next provides a robust starting point for building embeddable widgets and APIs for modern web projects. The modular approach allows for easy integration and extension, making it ideal for both learning and production use.
+
+---
+
+If you have questions or want to contribute, feel free to open an issue or pull request!
