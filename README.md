@@ -1,10 +1,14 @@
-# Feedback Widget NextJS
+# Feedback Widget Next
 
-![Screenshot 2025-06-24 at 00 39 22](https://github.com/user-attachments/assets/1739dbc0-80bf-4d96-b971-462b22994380)
-![Screenshot 2025-06-24 at 00 32 52](https://github.com/user-attachments/assets/c105e4f1-46a6-441b-8f8f-4a4c8f48c26f)
-![Screenshot 2025-06-24 at 00 39 05](https://github.com/user-attachments/assets/76a6a2ff-54d6-46a1-8955-c694cb16e8f9)
+> **A modern, full-stack feedback widget built with Next.js, React, Tailwind CSS, and Prisma (MongoDB).**
 
-A modern, full-stack feedback widget and API built with Next.js, React, Tailwind CSS, and Prisma.
+---
+
+## Live Demo & Integration
+
+- **Live Widget:** [https://widget-feedback-next.vercel.app/](https://widget-feedback-next.vercel.app/)
+- **Integrated Example:** [https://marketing-arnob.netlify.app/](https://marketing-arnob.netlify.app/)
+- **Integration Repo:** [Marketing--TailwindCSS-Fundamental-Project-2](https://github.com/arnobt78/Marketing--TailwindCSS-Fundamental-Project-2)
 
 ---
 
@@ -12,29 +16,29 @@ A modern, full-stack feedback widget and API built with Next.js, React, Tailwind
 
 1. [Project Summary](#project-summary)
 2. [Features](#features)
-3. [Technology Stack](#technology-stack)
-4. [Project Structure](#project-structure)
-5. [Getting Started](#getting-started)
-6. [Environment Variables](#environment-variables)
-7. [Database Setup](#database-setup)
-8. [Usage Instructions](#usage-instructions)
-9. [Widget Integration Guide](#widget-integration-guide)
-10. [Development & Customization](#development--customization)
-11. [ESLint & Tailwind CSS Configuration](#eslint--tailwind-css-configuration)
-12. [React Testing](#react-testing)
-13. [Keywords & Topics](#keywords--topics)
-14. [Learn More](#learn-more)
-15. [About](#about)
-16. [Conclusion](#conclusion)
+3. [Screenshots](#screenshots)
+4. [Live Demo & Integration](#live-demo--integration)
+5. [Project Structure](#project-structure)
+6. [Technology Stack](#technology-stack)
+7. [Prerequisites](#prerequisites)
+8. [Installation](#installation)
+9. [Environment Variables](#environment-variables)
+10. [Database Setup](#database-setup)
+11. [Usage Instructions](#usage-instructions)
+12. [Widget Integration](#widget-integration)
+13. [Development & Customization](#development--customization)
+14. [ESLint & Tailwind CSS Configuration](#eslint--tailwind-css-configuration)
+15. [React Testing](#react-testing)
+16. [Keywords & Topics](#keywords--topics)
+17. [Learn More](#learn-more)
+18. [About](#about)
+19. [Conclusion](#conclusion)
 
 ---
 
 ## Project Summary
 
-Feedback Widget Next is a reusable, embeddable feedback widget and API for modern web projects. Users can submit feedback (name, email, message, rating), which is stored in a database via Prisma. The widget is designed for easy integration, customization, and educational purposes. The API and widget are deployed on Vercel and can be embedded in any site.
-
-- **Live Demo**: [https://widget-feedback-next.vercel.app/](https://widget-feedback-next.vercel.app/)
-- **Example Integration**: [https://marketing-arnob.netlify.app/](https://marketing-arnob.netlify.app/)
+Feedback Widget Next is a reusable, embeddable feedback widget for modern web projects. Users can submit feedback (name, email, message, rating), which is stored in a MongoDB database via Prisma. The widget is designed for easy integration, customization, and educational purposes.
 
 ---
 
