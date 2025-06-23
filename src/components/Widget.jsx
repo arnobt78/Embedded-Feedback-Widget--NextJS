@@ -42,6 +42,10 @@ export default function Widget({ apiBase = "/api/feedback" }) {
         setError(data.error || "Failed to submit feedback");
       } else {
         setSubmitted(true);
+        // Try to refresh dashboard if available
+        if (window.refreshFeedbackDashboard) {
+          window.refreshFeedbackDashboard();
+        }
       }
     } catch (err) {
       setError("Network error");
@@ -59,7 +63,7 @@ export default function Widget({ apiBase = "/api/feedback" }) {
             Feedback
           </Button>
         </PopoverTrigger>
-        <PopoverContent className="widget rounded-lg bg-card p-4 shadow-lg w-full max-w-md">
+        <PopoverContent className="widget rounded-lg bg-white bg-opacity-95 p-4 shadow-lg w-full max-w-md border border-gray-200">
           {submitted ? (
             <div>
               <h3 className="text-lg font-bold">
@@ -101,10 +105,11 @@ export default function Widget({ apiBase = "/api/feedback" }) {
                     {[...Array(5)].map((_, index) => (
                       <StarIcon
                         key={index}
+                        filled={rating > index}
                         className={`h-5 w-5 cursor-pointer transition-colors ${
                           rating > index
                             ? "fill-yellow-400 stroke-yellow-400"
-                            : "fill-gray-300 stroke-gray-300"
+                            : "fill-none stroke-gray-400"
                         }`}
                         onClick={() => onSelectStar(index)}
                       />
@@ -125,7 +130,7 @@ export default function Widget({ apiBase = "/api/feedback" }) {
   );
 }
 
-function StarIcon(props) {
+function StarIcon({ filled, ...props }) {
   return (
     <svg
       {...props}
@@ -133,7 +138,7 @@ function StarIcon(props) {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
+      fill={filled ? "currentColor" : "none"}
       stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
