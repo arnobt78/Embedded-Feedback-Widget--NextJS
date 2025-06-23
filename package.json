@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "npx prisma generate && npx next build",
+    "build:widget": "vite build --config vite.config.widget.js",
+    "build": "npx prisma generate && npx next build && npm run build:widget",
     "start": "next start",
     "lint": "next lint"
   },
