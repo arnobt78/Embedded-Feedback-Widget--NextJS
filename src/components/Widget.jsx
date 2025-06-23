@@ -12,7 +12,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-export default function Widget() {
+export default function Widget({ apiBase = "/api/feedback" }) {
   const [rating, setRating] = useState(3);
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -30,9 +30,9 @@ export default function Widget() {
     const name = form.name.value;
     const email = form.email.value;
     const message = form.feedback.value;
-    // POST to local API endpoint
+    // POST to configurable API endpoint
     try {
-      const res = await fetch("/api/feedback", {
+      const res = await fetch(apiBase, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, message, rating }),

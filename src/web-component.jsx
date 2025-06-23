@@ -19,7 +19,7 @@ class WidgetWebComponent extends HTMLElement {
     root.render(
       <>
         <style>{tailwindStyles}</style>
-        <Widget {...props} />
+        <Widget {...props} apiBase={props.apiBase} />
       </>
     );
   }
