@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import Widget from "./components/Widget";
+import tailwindStyles from "./app/globals.css?inline";
 
 export const normalizeAttribute = (attribute) => {
   return attribute.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase());
@@ -15,7 +16,12 @@ class WidgetWebComponent extends HTMLElement {
   connectedCallback() {
     const props = this.getPropsFromAttributes();
     const root = createRoot(this.shadowRoot);
-    root.render(<Widget {...props} />);
+    root.render(
+      <>
+        <style>{tailwindStyles}</style>
+        <Widget {...props} />
+      </>
+    );
   }
 
   getPropsFromAttributes() {
