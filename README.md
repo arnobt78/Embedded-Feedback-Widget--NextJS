@@ -1,15 +1,10 @@
-# Feedback Widget Next
+🧩 Embedded Feedback Widget (Reusable) – Next.js
 
-<img width="700" alt="Screenshot 2025-06-24 at 00 39 22" src="https://github.com/user-attachments/assets/26adec5e-1b6a-4fd7-ba36-ef77e8997920" />
-
-<img width="700" alt="Screenshot 2025-06-24 at 00 32 52" src="https://github.com/user-attachments/assets/fbae9823-52ee-47cf-aa7b-6aa006453a07" />
-
-<img width="700" alt="Screenshot 2025-06-24 at 00 39 05" src="https://github.com/user-attachments/assets/ad5163c6-0401-4d1b-812c-0cf1c6119a5a" />
-
-
-A modern, full-stack feedback widget built with Next.js, React, Tailwind CSS, and Prisma (MongoDB).
+<img width="700" alt="Screenshot 2025-06-24 at 00 39 22" src="https://github.com/user-attachments/assets/26adec5e-1b6a-4fd7-ba36-ef77e8997920" /> <img width="700" alt="Screenshot 2025-06-24 at 00 32 52" src="https://github.com/user-attachments/assets/fbae9823-52ee-47cf-aa7b-6aa006453a07" /> <img width="700" alt="Screenshot 2025-06-24 at 00 39 05" src="https://github.com/user-attachments/assets/ad5163c6-0401-4d1b-812c-0cf1c6119a5a" />
 
 ---
+
+A modern, reusable full-stack feedback widget built with Next.js, React, Tailwind CSS, and Prisma (MongoDB). Easily embed this widget into any project to collect user feedback — view and manage submissions across platforms via a connected CRM or shared feedback table.
 
 ## Live Demo & Integration
 
