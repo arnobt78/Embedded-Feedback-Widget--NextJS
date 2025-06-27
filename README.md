@@ -1,4 +1,4 @@
-🧩 Embedded Feedback Widget (Reusable) – Next.js
+# 🧩 Embedded Feedback Widget (Reusable) – Next.js
 
 <img width="700" alt="Screenshot 2025-06-24 at 00 39 22" src="https://github.com/user-attachments/assets/26adec5e-1b6a-4fd7-ba36-ef77e8997920" /> <img width="700" alt="Screenshot 2025-06-24 at 00 32 52" src="https://github.com/user-attachments/assets/fbae9823-52ee-47cf-aa7b-6aa006453a07" /> <img width="700" alt="Screenshot 2025-06-24 at 00 39 05" src="https://github.com/user-attachments/assets/ad5163c6-0401-4d1b-812c-0cf1c6119a5a" />
 
